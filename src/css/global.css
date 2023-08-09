@@ -11,6 +11,10 @@ html {
     font-weight: 300
 }
 
+a {
+    text-decoration: none;
+}
+
 
 h1.heading {
     font-size: 4.6rem;
@@ -79,6 +83,7 @@ p {
     border-radius: .6rem;
     cursor: pointer;
     font-size: 1.4rem;
+    transition: all .3s ease-in-out;
 }
 
 .cta-button.btn-dark {
@@ -89,6 +94,15 @@ p {
 .cta-button.btn-lg {
     padding: .9rem 1.2rem;
     font-size: 1.4rem;
+}
+
+.cta-button:hover {
+    background-color: #000;
+    color: #FFF;
+}
+.cta-button.btn-dark:hover {
+    background-color: #FFF;
+    color:rgb(18, 24, 33);
 }
 
 /* BUTTONS END */

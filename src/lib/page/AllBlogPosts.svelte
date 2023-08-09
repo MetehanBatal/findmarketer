@@ -18,7 +18,7 @@
         </div>
         <div class="pagination-wrapper">
             <div class="cta-button prev-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#000" width="24" height="24" viewBox="0 0 24 24">
                     <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"/>
                 </svg>
                 <p>Previous</p>
@@ -28,7 +28,7 @@
             </div>
             <div class="cta-button next-button">
                 <p>Next</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#000" width="24" height="24" viewBox="0 0 24 24">
                     <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"/>
                 </svg>
             </div>
@@ -41,6 +41,10 @@
 
 
 <style>
+
+    svg {
+        transition: all .3s ease-in-out;
+    }
 
     .blogs {
         padding: 2rem 2.4rem;
@@ -88,6 +92,12 @@
     .cta-button.next-button svg {
         rotate: 45deg;
         margin-left: auto;
+        fill: #333;
+    }
+
+    .cta-button.next-button:hover svg,
+    .cta-button.prev-button:hover svg {
+        fill: white;
     }
 
 
