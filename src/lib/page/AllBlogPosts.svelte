@@ -8,7 +8,7 @@
 
 <section class="blogs">
     <div class="uk-container">
-        <h3 class="heading">All Blog Posts</h3>
+        <h3 class="heading purple">All Blog Posts</h3>
         <div class="all-blog-posts">
             <Card/>
             <Card/>
