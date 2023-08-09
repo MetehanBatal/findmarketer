@@ -124,8 +124,8 @@ h3.heading {
 }
 
 .blogs-wrapper .blog-item:first-child img {
-    max-width: 600px;
-    max-height: 420px;
+    max-width: 60rem;
+    max-height: 38.6rem;
     width: 100%;
 }
 
