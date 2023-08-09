@@ -7,7 +7,7 @@
     <img src="https://picsum.photos/600/800" alt="">
     <div class="post-information">
         <p class="author-name">Oliver Rhye · 20 Jan 2024</p>
-        <a class="post-link" href="/">
+        <a class="post-link" href="/blog">
             <p class="post-title"><span>Lorem ipsum dolor sit.</span> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"/>
@@ -30,11 +30,6 @@
 
 <style>
 
-    .post-link {
-        display: block;
-        width: 100%;
-    }
-
     .blog-card {
         display: flex;
         flex-direction: column;
@@ -54,13 +49,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-
-    svg {
-        width: 2rem;
-        height: 2rem;
-        margin-left: auto;
-        transform: translateY(-8px);
     }
 
     .blog-card .badge-wrapper {

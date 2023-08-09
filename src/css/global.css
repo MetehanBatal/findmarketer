@@ -253,6 +253,18 @@ h3.heading {
 }
 
 
+.post-link {
+    display: block;
+    width: 100%;
+}
+
+.post-title svg {
+    width: 2rem;
+    height: 2rem;
+    margin-left: auto;
+    transform: translateY(-8px);
+}
+
 /* BLOG POST */
 
 .blog-post h1.heading {
