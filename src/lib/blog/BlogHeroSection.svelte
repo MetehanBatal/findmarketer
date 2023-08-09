@@ -6,10 +6,10 @@
 <section class="blog">
     <div class="uk-container blog-container">
         <div class="all-posts">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#534ff2" width="24" height="24" viewBox="0 0 24 24">
                 <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"/>
               </svg>
-            <p>All Blog Posts</p>          
+            <p class="purple">All Blog Posts</p>          
         </div>
         <h1 class="heading">
             Lorem ipsum dolor sit.
@@ -36,6 +36,8 @@
     }
 
     .all-posts {
+        width: fit-content;
+
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -43,6 +45,23 @@
         gap: 1rem;
 
         margin-bottom: 2rem;
+
+        transition: all .3s ease-in-out;
+        padding: .6rem 1.2rem;
+        border-radius: .7rem;
+        cursor: pointer;
+    }
+
+    .all-posts:hover {
+        color: #FFF;
+        background-color: #534ff2;
+    }
+
+    .all-posts:hover svg {
+        fill: #FFF;
+    }
+    .all-posts:hover p {
+        color: #FFF;
     }
 
     .all-posts svg {
