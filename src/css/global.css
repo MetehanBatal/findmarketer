@@ -44,10 +44,14 @@ p {
 .input-holder {
     position: relative;
     width: 100%;
-    max-width: 50rem;
+    max-width: 35rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.input-holder.input-lg {
+    max-width: 50rem;
 }
 
 .input-holder input {
@@ -58,6 +62,10 @@ p {
     height: 5rem;
     border-radius: .6rem;
     border: .2rem solid rgb(236, 236, 242);
+}
+
+.input-item.input-sm {
+    height: 4rem;
 }
 
 /* INPUTS END */
@@ -80,7 +88,7 @@ p {
 
 .cta-button.btn-lg {
     padding: .9rem 1.2rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 /* BUTTONS END */

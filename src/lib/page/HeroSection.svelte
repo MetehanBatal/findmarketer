@@ -14,7 +14,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, fuga reiciendis similique aliquam repellat nisi distinctio dicta architecto adipisci accusamus.
             </p>
         </div>
-        <div class="input-holder">
+        <div class="input-holder input-lg">
             <input class="input-item" type="text">
             <div class="cta-button btn-lg btn-dark">Subscribe</div>
         </div>

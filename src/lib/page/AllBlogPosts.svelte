@@ -58,6 +58,7 @@
         grid-template-columns: 1fr;
         border-bottom: .1rem solid #333;
         padding-block: 2rem;
+        gap: 0.5rem;
     }
 
     .pagination-wrapper {
