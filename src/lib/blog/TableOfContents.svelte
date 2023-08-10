@@ -133,6 +133,9 @@
         .toc {
             margin-top: 0;
             max-width: 30rem;
+            position: sticky;
+            top: 5rem;
+            height: fit-content;
         }
     }
 </style>
