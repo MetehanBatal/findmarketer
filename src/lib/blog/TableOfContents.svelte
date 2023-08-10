@@ -2,6 +2,8 @@
 
     import { onMount } from 'svelte';
 
+    /* 
+
     onMount(() => {
         initToC();
         addClickHandlers();
@@ -64,6 +66,8 @@
     });
   }
 
+  */
+
 </script>
 <svelte:head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.css">
@@ -72,13 +76,48 @@
 <div class="toc">
     <h4 class="toc-heading">Table Of Contents</h4>
     <div class="toc-render-here" name="render-tocbot-here" data-article-container="main-article-rtb">
-
+        <ul>
+            <li><a href="#lorem-ipsum-dolor-sit">Lorem ipsum dolor sit.</a></li>
+            <li><a href="#lorem-ipsum-dolor-sit-amet-consectetur">Lorem ipsum dolor sit amet consectetur.</a></li>
+            <li><a href="#lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</a></li>
+            <li><a href="#lorem-ipsum-dolor-sit-amet-consectetur-adipisicing">Lorem ipsum dolor sit amet consectetur adipisicing.</a></li>
+            <li><a href="#lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit-soluta-fugiat-rerum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, fugiat rerum.</a></li>
+        </ul>
     </div>
 </div>
 
 
 
 <style>
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    ul li {
+        list-style-type: none;
+        font-size: 1.4rem;
+        padding: .3rem .6rem;
+        border-radius: .6rem;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #475467;
+        font-family: "Medium";
+    }
+
+    ul li:hover {
+        background-color: #f9fafb;
+        color: #475467;
+    }
+
+    ul li:hover a {
+        color: #000;
+    }
+
     .toc {
         margin-block: 1.5rem;
         width: 100%;
@@ -87,7 +126,7 @@
     h4.toc-heading {
         margin-block: 0 1rem;
         font-size: 1.6rem;
-        font-weight: "SemiBold";
+        font-family: "Bold";
     }
 
     @media screen and (min-width : 768px) {

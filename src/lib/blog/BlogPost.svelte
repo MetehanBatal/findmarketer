@@ -3,14 +3,13 @@
     import Contributor from "./Contributor.svelte";
 import TableOfContents from "./TableOfContents.svelte";
 
-
 </script>
 
 
 <section class="blog-post-section">
     <div class="uk-container blog-post-section-container">
-        <TableOfContents/>
-        <Content/>
+        <TableOfContents />
+        <Content />
         <Contributor/>  
     </div>
 </section>
