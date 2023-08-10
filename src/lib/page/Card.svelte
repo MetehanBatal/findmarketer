@@ -42,6 +42,7 @@
         max-width: 30rem;
         max-height: 20rem;
         width: 100%;
+        object-fit: cover;
     }
 
     .post-title {

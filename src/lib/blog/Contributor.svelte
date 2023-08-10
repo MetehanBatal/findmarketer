@@ -70,6 +70,7 @@
         width: 4.8rem;
         height: 4.8rem;
         border-radius: 50%;
+        object-fit: cover;
     }
 
     @media screen and (min-width: 768px){

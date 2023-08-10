@@ -1,11 +1,11 @@
 <script>
-
+    import {goto} from '$app/navigation';
 </script>
 
 
 <section class="blog">
     <div class="uk-container blog-container">
-        <div class="all-posts">
+        <div class="all-posts" on:click={() => goto("/")}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="#534ff2" width="24" height="24" viewBox="0 0 24 24">
                 <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"/>
               </svg>
@@ -29,6 +29,7 @@
     img {
         width: 100%;
         margin-block: 3rem 3rem;
+        object-fit: cover;
     }
 
     .blog-container {
