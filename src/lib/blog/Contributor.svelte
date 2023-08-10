@@ -12,7 +12,7 @@
             </div>
             <div class="contributor-author">
                 <p class="contributor-name">Gala Naseva</p>
-                <p class="contributor-date">Dec 26, 2022</p>
+                <p class="contributor-date">Aug 10, 2023</p>
             </div>
         </div>
     </div>
@@ -24,7 +24,7 @@
             </div>
             <div class="contributor-author">
                 <p class="contributor-name">Jordan Hughes</p>
-                <p class="contributor-job">Untitled UI</p>
+                <p class="contributor-job">Mayple Expert</p>
             </div>
         </div>
     </div>
