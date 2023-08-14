@@ -1,6 +1,6 @@
 <script>
     import Card from "./Card.svelte";
-
+    import { blogs } from '../../stores/blogs';
 
 </script>
 
@@ -10,11 +10,9 @@
     <div class="uk-container">
         <h3 class="heading purple">All Blog Posts</h3>
         <div class="all-blog-posts">
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
+            {#each blogs as blog}
+                <Card content={blog.content} slug={blog.slug}/>
+            {/each}
         </div>
         <div class="pagination-wrapper">
             <div class="cta-button prev-button">

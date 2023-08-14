@@ -1,5 +1,8 @@
 <script>
 
+
+    export let content;
+    export let slug
 </script>
 
 
@@ -7,14 +10,14 @@
     <img src="https://picsum.photos/600/800" alt="">
     <div class="post-information">
         <p class="author-name">Oliver Rhye · 20 Jan 2024</p>
-        <a class="post-link" href="/blog">
+        <a class="post-link" href="/blog/{slug}">
             <p class="post-title"><span>Lorem ipsum dolor sit.</span> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"/>
                 </svg>
             </p>
         </a>
-        <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam error deleniti nesciunt doloribus illo animi. </p>
+        <p class="post-description">{content}</p>
         <div class="badge-wrapper">
             <div class="badge">
                 Design
