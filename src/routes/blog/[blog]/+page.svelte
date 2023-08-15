@@ -3,8 +3,6 @@
     import BlogPost from "../../../lib/blog/BlogPost.svelte";
     import { blogs } from "../../../stores/blogs";
 
-
-    console.log(blogs);
 </script>
 
 

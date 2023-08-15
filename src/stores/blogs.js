@@ -10,7 +10,7 @@ export const blogs = [
         href: "2.html"
     },
     {
-        content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates excepturi, vero quae dolorem ipsa animi aperiam amet eaque sint reprehenderit.",
+        content : "Lorem ipsum dolor sit amet, testeeeer consectetur adipisicing elit. Voluptates excepturi, vero quae dolorem ipsa animi aperiam amet eaque sint reprehenderit.",
         slug : "lorem-ipsum-3",
         href: "3.html"
     },
