@@ -2,7 +2,7 @@
    <div class="uk-container newsletter-container">
 		<div class="newsletter-description">
 			<h3 class="heading">Join our newsletter</h3>
-			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, eum adipisci porro praesentium maxime delectus!</p>
+			<p>Don't Miss Out on Valuable Marketing Insights! Join our newsletter community and be the first to access expert advice, actionable strategies, and the latest industry trends.</p>
 			<div class="sign-up">
 				<div class="input-holder">
 					<input class="input-item input-sm" type="email">
@@ -27,7 +27,7 @@
 
 <style>
 	footer {
-		padding-inline:2.4rem;
+		padding:9rem 2.4rem;
 	}
 
 	.newsletter-container {
@@ -50,6 +50,8 @@
 		flex: 1;
 		align-items: flex-start;
 		gap: 1rem;
+
+		margin-top: 2rem;
 	}
 
 	.disclaimer-section {
@@ -90,6 +92,7 @@
 	@media screen and (min-width: 768px) {
 		.newsletter-container {
 			flex-direction: row;
+			padding: 6.4rem 6.4rem 0 6.4rem;
 		}
 
 		.disclaimer-section p {
@@ -100,8 +103,8 @@
 			padding-inline: 0;
 		}
 
-		.newsletter-container {
-			padding: 6.4rem;
+		.newsletter-description {
+			padding-bottom: 6.4rem;
 		}
 	}
 </style>

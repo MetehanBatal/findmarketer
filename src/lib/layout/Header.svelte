@@ -1,4 +1,5 @@
 <script>
+	import { goto } from '$app/navigation';
 
 </script>
 
@@ -6,7 +7,7 @@
 
 	<header class="navbar-wrapper">
 		<nav>
-			<img src="/assets/logo.svg">
+			<img on:click={() => goto("/")} src="/assets/logo.svg">
 			<div class="cta-button">Get Started</div>
 		</nav>
 	</header>
@@ -28,7 +29,8 @@
 		padding: 2rem 2.4rem;
 
 		background-color: rgba(255,255,255,.8);
-		box-shadow: 0 16px 32px 12px rgba(16,24,40,.05)
+		box-shadow: 0 16px 32px 12px rgba(16,24,40,.05);
+		backdrop-filter: blur(1.2rem);
 	}
 	
 	nav {
@@ -42,6 +44,13 @@
 	}
 
 	nav img {
-		max-height: 4rem;
+		max-height: 3rem;
+		cursor: pointer;
+	}
+
+	@media screen and (min-width: 768px) {
+		nav img {
+			max-height: 4rem;
+		}
 	}
 </style>

@@ -15,10 +15,10 @@ console.log(recentBlogs);
         
         <div class="blogs-wrapper">
             {#each recentBlogs as blog}
-                <a class="blog-item">
+                <a class="blog-item" href={`/blog/${blog.slug}`}>
                     <img class="blog-thumbnail" src={blog.thumbnail} alt={blog.title}>
                     <div class="post-information">
-                        <a class="post-link" href={`/blog/${blog.slug}`}>
+                        <a class="post-link">
                             <p class="post-title"><span>{blog.title}</span> 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                     <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"/>

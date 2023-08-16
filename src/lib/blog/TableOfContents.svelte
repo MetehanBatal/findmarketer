@@ -134,7 +134,7 @@
             margin-top: 0;
             max-width: 30rem;
             position: sticky;
-            top: 8rem;
+            top: 11rem;
             height: fit-content;
         }
     }

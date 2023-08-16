@@ -130,7 +130,7 @@
 	@media screen and (min-width: 768px){
 		.contributor {
 			position: sticky;
-            top: 8rem;
+            top: 11rem;
             height: fit-content;
 
 			width: 100%;

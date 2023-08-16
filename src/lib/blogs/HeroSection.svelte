@@ -29,6 +29,10 @@
 		padding-block: 11rem 6rem;
 	}
 
+	.hero-section {
+		padding-inline: 2.4rem;
+	}
+
 	.hero-description {
 		display: flex;
 		flex-direction: column;
