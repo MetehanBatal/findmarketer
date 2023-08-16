@@ -65,6 +65,9 @@
 
 	.disclaimer-section p {
 		max-width: 100%;
+		font-size: 1.3rem;
+		line-height: 1.9rem;
+		color: #475467;
 	}
 
 

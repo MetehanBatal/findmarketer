@@ -16,7 +16,7 @@ console.log(recentBlogs);
         <div class="blogs-wrapper">
             {#each recentBlogs as blog}
                 <div class="blog-item">
-                    <img src={blog.thumbnail} alt={blog.title}>
+                    <img class="blog-thumbnail" src={blog.thumbnail} alt={blog.title}>
                     <div class="post-information">
                         <p class="author-name">{blog.authorName} · {blog.publishDate}</p>
                         <a class="post-link" href="/blog">
