@@ -1,24 +1,15 @@
 <script>
-    import BlogHeroSection from "../../../lib/blog/BlogHeroSection.svelte";
-    import BlogPost from "../../../lib/blog/BlogPost.svelte";
-    import { blogs } from "../../../stores/blogs";
+    import BlogHeroSection from '$lib/blog/BlogHeroSection.svelte';
+    import BlogPost from '$lib/blog/BlogPost.svelte';
 
-
-    console.log(blogs);
+    export let data;
+    data = data[0];
+    console.log(data);
 </script>
 
 
 <main class="blog-post">
-    <BlogHeroSection/>
-    <BlogPost/>
+    <BlogHeroSection {data} />
+
+    <BlogPost {data} />
 </main>
-
-
-
-
-
-<style>
-
-   
-
-</style>

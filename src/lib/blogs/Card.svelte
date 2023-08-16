@@ -1,23 +1,23 @@
 <script>
+	import { goto } from '$app/navigation';
 
-
-    export let content;
-    export let slug
+    export let blog;
 </script>
 
 
-<div class="blog-card">
-    <img src="https://picsum.photos/600/800" alt="">
+<div class="blog-card" on:click={goto(`/blog/${blog.slug}`)}>
+    <img src={blog.thumbnail} alt={blog.title}>
+
     <div class="post-information">
-        <p class="author-name">Oliver Rhye · 20 Jan 2024</p>
-        <a class="post-link" href="/blog/{slug}">
-            <p class="post-title"><span>Lorem ipsum dolor sit.</span> 
+        <p class="author-name">{blog.authorName} · {blog.publishDate}</p>
+        <!-- <a class="post-link" href="/blog/{slug}"> -->
+            <p class="post-title"><span>{blog.title}</span> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"/>
                 </svg>
             </p>
-        </a>
-        <p class="post-description">{content}</p>
+        <!-- </a> -->
+        <p class="post-description">{blog.excerpt}</p>
         <div class="badge-wrapper">
             <div class="badge">
                 Design
@@ -37,8 +37,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 30rem;
         gap: 1.2rem;
+
+        max-width: 30rem;
+        
+        cursor: pointer;
     }
 
     .blog-card img {

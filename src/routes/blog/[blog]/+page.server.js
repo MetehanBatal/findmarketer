@@ -5,7 +5,7 @@ import { error } from '@sveltejs/kit';
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ params }) {
-	const blog = blogs.filter((e) => e.slug === params.blogs);
+	const blog = blogs.filter((e) => e.slug === params.blog);
 
 	return { ...blog };
 

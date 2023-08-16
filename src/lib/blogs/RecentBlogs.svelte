@@ -7,6 +7,7 @@
 <section class="blogs">
     <div class="uk-container">
         <h3 class="heading purple">Recent Blog Posts</h3>
+        
         <div class="blogs-wrapper">
             <div class="blog-item">
                 <img src="https://picsum.photos/600/800" alt="">

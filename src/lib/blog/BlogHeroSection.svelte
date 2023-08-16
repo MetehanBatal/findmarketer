@@ -1,5 +1,7 @@
 <script>
     import {goto} from '$app/navigation';
+
+    export let data;
 </script>
 
 
@@ -12,10 +14,10 @@
             <p class="purple">All Blog Posts</p>          
         </div>
         <h1 class="heading">
-            Lorem ipsum dolor sit.
+            {data.title}
         </h1>
         <p class="post-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magni saepe pariatur accusantium, non expedita.
+            {data.excerpt}
         </p>
         <img src="https://uploads-ssl.webflow.com/6365d860c7b7a7191055eb8a/63a80bef0bd1f4f7b4227d9c_how-to-improve-your-ui-design-skills-cover.webp" alt="">
     </div>
