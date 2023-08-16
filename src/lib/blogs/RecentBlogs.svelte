@@ -19,7 +19,7 @@ console.log(recentBlogs);
                     <img class="blog-thumbnail" src={blog.thumbnail} alt={blog.title}>
                     <div class="post-information">
                         <p class="author-name">{blog.authorName} · {blog.publishDate}</p>
-                        <a class="post-link" href="/blog">
+                        <a class="post-link" href="/blog/{blog.slug}">
                             <p class="post-title"><span>{blog.title}</span> 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                     <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"/>
