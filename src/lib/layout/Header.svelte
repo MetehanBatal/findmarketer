@@ -32,7 +32,7 @@
 	}
 	
 	nav {
-		max-width: 144rem;
+		max-width: 132rem;
 		display: flex;
 		width: 100%;
 		align-items: center;

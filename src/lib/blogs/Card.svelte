@@ -6,7 +6,7 @@
 
 
 <div class="blog-card" on:click={goto(`/blog/${blog.slug}`)}>
-    <img src={blog.thumbnail} alt={blog.title}>
+    <img class="blog-thumbnail" src={blog.thumbnail} alt={blog.title}>
 
     <div class="post-information">
         <p class="author-name">{blog.authorName} · {blog.publishDate}</p>
@@ -18,12 +18,11 @@
             </p>
         <!-- </a> -->
         <p class="post-description">{blog.excerpt}</p>
-        <div class="badge-wrapper">
-            <div class="badge">
-                Design
-            </div>
-            <div class="badge">
-                Strength
+        <div class="author-credits">
+            <img class="author-thumb" src="assets/images/authors/{blog.authorImg}" alt="author-image">
+            <div class="author-credits-description">
+                <p class="author-name">{blog.authorName}</p>
+                <p class="author-credits-date">{blog.publishDate}</p>
             </div>
         </div>
     </div>
@@ -44,7 +43,7 @@
         cursor: pointer;
     }
 
-    .blog-card img {
+    .blog-card .blog-thumbnail {
         max-width: 30rem;
         max-height: 20rem;
         width: 100%;
@@ -60,6 +59,23 @@
 
     .blog-card .badge-wrapper {
         margin-top: 1rem;
+    }
+
+    .author-credits {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .author-thumb {
+        max-width: 4rem;
+        max-height: 4rem;
+        border-radius: 50%;
+    }
+
+    .author-credits-date {
+        font-size: 1.2rem;
     }
 
 

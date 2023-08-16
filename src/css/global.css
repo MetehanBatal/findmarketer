@@ -166,8 +166,8 @@ h3.heading {
 .author-name {
     font-size: 1.2rem;
     line-height: 1.2rem;
-    color: rgb(90, 93, 100);
-    font-family: "Semibold";
+    color: #101828;
+    font-family: "Bold";
 }
 
 .post-title {
@@ -191,8 +191,9 @@ h3.heading {
 
 
 .blogs-wrapper .blog-item:not(:first-child) img {
-    max-width: 25rem;
-    max-height: 15rem;
+    max-width: 30rem;
+    max-height: 25rem;
+    width: 100%;
     object-fit: cover;
 }
 

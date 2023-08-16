@@ -35,7 +35,7 @@
     }
 
     .blog-container {
-        padding: 2rem 2.4rem;
+        padding: 8rem 2.4rem;
     }
 
     .all-posts {
