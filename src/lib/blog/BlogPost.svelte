@@ -1,5 +1,4 @@
 <script>
-<<<<<<< HEAD
 	import Content from "./Content.svelte";
 	import Contributor from "./Contributor.svelte";
 	import TableOfContents from "./TableOfContents.svelte";
