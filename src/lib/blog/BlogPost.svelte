@@ -1,11 +1,11 @@
 <script>
+<<<<<<< HEAD
 	import Content from "./Content.svelte";
 	import Contributor from "./Contributor.svelte";
 	import TableOfContents from "./TableOfContents.svelte";
 
 	export let data;
 </script>
-
 
 <section class="blog-post-section">
 	<div class="uk-container blog-post-section-container">
