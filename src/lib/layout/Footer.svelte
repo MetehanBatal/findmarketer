@@ -1,23 +1,24 @@
 <footer class="uk-container">
    <div class="uk-container newsletter-container">
 		<div class="newsletter-description">
-			<h3 class="heading">Sign Up to Our Newsletter</h3>
-			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, <br> eum adipisci porro praesentium maxime delectus!</p>
-		</div>
-		<div class="sign-up">
-			<div class="input-holder">
-				<input class="input-item input-sm" type="email">
+			<h3 class="heading">Join our newsletter</h3>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, eum adipisci porro praesentium maxime delectus!</p>
+			<div class="sign-up">
+				<div class="input-holder">
+					<input class="input-item input-sm" type="email">
+				</div>
+				<div class="cta-button btn-lg btn-purple">
+					Subscribe
+				</div>
 			</div>
-			<div class="cta-button btn-lg btn-dark">
-				Subscribe
-			</div>
 		</div>
+		<img src="https://assets-global.website-files.com/5a68f082ae5eb70001efdda4/62de27bbe8549c07e9ebae1a_experts.png" alt="">
    </div>
    <div class="disclaimer-section">
 		<div class="disclaimer-text">
 			<img src="/assets/logo.svg" alt="">
 			<p>
-				© 2023 Untitled UI. All rights reserved. Untitled UI is not affiliated with Figma or Figma's team, nor is it endorsed by or sponsored by Figma. A side project by Jordan who is working on Himalayas, a better remote jobs platform. This website was built in Webflow (this is an affiliate link). Crafted in Melbourne, Australia. We acknowledge this country’s First Nations peoples and their ongoing strength in practising the world’s oldest living culture. We acknowledge the Traditional Owners of the land on which our office stands, The Wurundjeri people of the Kulin Nation, and pay our respects to Elders past and present.
+				The findMarketer platform serves as a connection medium for businesses seeking freelance marketers. It's important to note that while we facilitate these connections, we don't endorse or verify marketer qualifications. Any engagement with a marketer is solely at your discretion, and you should thoroughly assess their suitability for your needs. We do not guarantee the effectiveness of any marketing strategies or projects, and outcomes may vary. findMarketer assumes no liability for disputes, unsatisfactory results, or any damages arising from engagements. 
 			</p>
 		</div>
 	</div>
@@ -31,19 +32,23 @@
 
 	.newsletter-container {
 		display: flex;
-		padding-block: 5rem;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 		justify-content: space-between;
+
+		background-color: #f9fafb;
+
 		gap: 2rem;
+		padding-block: 5rem;
 		border-bottom: .1rem solid #eaecf0;
+		border-radius: 1.6rem;
 	}
 
 	.sign-up {
 		display: flex;
+		flex-direction: column;
 		flex: 1;
 		align-items: flex-start;
-		justify-content: flex-end;
 		gap: 1rem;
 	}
 
@@ -70,6 +75,17 @@
 		color: #475467;
 	}
 
+	.cta-button.btn-lg {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 1.2rem 1.2rem;
+	}
+
+	.newsletter-container img {
+		width: 100%;
+		max-width: 80rem;
+	}
 
 	@media screen and (min-width: 768px) {
 		.newsletter-container {
@@ -82,6 +98,10 @@
 
 		footer {
 			padding-inline: 0;
+		}
+
+		.newsletter-container {
+			padding: 6.4rem;
 		}
 	}
 </style>

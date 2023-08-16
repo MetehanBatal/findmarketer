@@ -9,7 +9,6 @@
     <img class="blog-thumbnail" src={blog.thumbnail} alt={blog.title}>
 
     <div class="post-information">
-        <p class="author-name">{blog.authorName} · {blog.publishDate}</p>
         <!-- <a class="post-link" href="/blog/{slug}"> -->
             <p class="post-title"><span>{blog.title}</span> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -66,6 +65,7 @@
         align-items: center;
         justify-content: flex-start;
         gap: 1rem;
+        margin-top: auto !important;
     }
 
     .author-thumb {

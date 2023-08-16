@@ -68,7 +68,6 @@ p {
 .input-holder {
     position: relative;
     width: 100%;
-    max-width: 35rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,6 +108,15 @@ p {
 .cta-button.btn-dark {
     background-color: rgb(18, 24, 33);
     color: #FFF;
+}
+
+.cta-button.btn-purple {
+    color: #FFF;
+    background-color: #7f56d9;
+}
+.cta-button.btn-purple:hover {
+    color: #FFF;
+    background-color: #6941c6;
 }
 
 .cta-button.btn-lg {
@@ -158,7 +166,7 @@ h3.heading {
 }
 
 .blogs-wrapper .blog-item:first-child img {
-    max-height: 34rem;
+    max-height: 38rem;
     width: 100%;
     object-fit: cover;
 }
@@ -225,7 +233,7 @@ h3.heading {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 1.2rem;
+        gap: 2rem;
     }
 
     .blogs-wrapper .blog-item:not(:first-child) {

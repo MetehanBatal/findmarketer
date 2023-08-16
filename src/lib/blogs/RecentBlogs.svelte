@@ -15,11 +15,10 @@ console.log(recentBlogs);
         
         <div class="blogs-wrapper">
             {#each recentBlogs as blog}
-                <div class="blog-item">
+                <a class="blog-item">
                     <img class="blog-thumbnail" src={blog.thumbnail} alt={blog.title}>
                     <div class="post-information">
-                        <p class="author-name">{blog.authorName} · {blog.publishDate}</p>
-                        <a class="post-link" href="/blog/{blog.slug}">
+                        <a class="post-link" href={`/blog/${blog.slug}`}>
                             <p class="post-title"><span>{blog.title}</span> 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                     <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"/>
@@ -35,7 +34,7 @@ console.log(recentBlogs);
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             {/each}
         </div>
     </div>
@@ -45,6 +44,10 @@ console.log(recentBlogs);
 
 
 <style>
+.blogs {
+    margin-bottom: 5rem;
+}
+
 .blog-item .post-title {
     width: 100%;
     display: flex;
@@ -57,6 +60,7 @@ console.log(recentBlogs);
         align-items: center;
         justify-content: flex-start;
         gap: 1rem;
+        margin-top: auto;
     }
 
     .author-thumb {

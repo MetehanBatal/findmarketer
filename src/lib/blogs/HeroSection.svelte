@@ -26,7 +26,7 @@
 
 <style>
 	section {
-		padding-block: 8rem 6rem;
+		padding-block: 11rem 6rem;
 	}
 
 	.hero-description {
